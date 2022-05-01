@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"/>
-	<title>student's list</title>
+	<title>lb-4-js</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="description" content="">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
-	<h1>Hello World!</h1>
+	<form> 
+		<input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Search..." autofocus>
+		<input class="button_for_turn_back" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value=" " title="Clear">
+		<input type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" name="submit" class="submit" value="Search">
+	  </form>
 </body>
 </html>

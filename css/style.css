@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+}
+td, th {
+            border: 1px solid gray;
+            width: 100px;
+            height: 20px;
+            padding: 5px;
+}
+caption {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+td:nth-child(1), 
+td:nth-child(4)  {
+    text-align: center;
+}
+form {
+    width:600px;
+    margin:auto;
+    margin-top: 250px;
+}
+input{
+    padding:4px 10px;
+    font-size:16px;
+}
+.place_for_search {
+    width: 75%;
+}
+.submit{
+    width: 70px;
+    background-color: #1c87c9;
+    color:#ffffff;
+}
+form input {
+    display: inline-block;
+}
