@@ -82,7 +82,7 @@ const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
             new Student("Дмитро", "Гордон")
         ];
  
-        let headArray = ["ID", "Имя", "Фамилия", "Середній\nбал"];
+        let headArray = ["ID", "Ім'я", "Прізвище", "Середній\nбал"];
         let bodyArray = students.map(e => [formatInt(e.id, "0000-0000"), e.firstname, e.lastname, e.averageMark.toFixed(1)]);
  
         createTable(document.body, "Список студентів", headArray, bodyArray);
